@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot?serverTimezone=Asia/Shanghai
+    username: root
+    password: 292116
+
+##日志显示
+logging:
+  level:
+    com:
+      zdy:
+        cn: debug
+  file:
+    name: D:\software\MAVENPROJECT\project.log
+
+
+##加载映射文件
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
